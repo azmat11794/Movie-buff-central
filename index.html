@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Buff Central</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Movie Buff Central</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#characters">Character Bios</a></li>
+      <li><a href="#trailers">Movie Trailers</a></li>
+      <li><a href="#quote">Quote of the Day</a></li>
+      <li><a href="#quiz">Trivia Quiz</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>About the Franchise</h2>
+    <p>A fan page dedicated to <b>"Avengers: Endgame" (2019)</b>. Explore the exciting world of "Avengers: Endgame" with character bios, trailers, quotes, and a fun trivia quiz!</p>
+    <div class="image-poster">
+    <img src="AE poster1.jpeg" alt="Movie Poster 1">
+    <img src="AE poster 2.webp" alt="Movie Poster 2">
+</div>
+  </section>
+
+  <section id="characters">
+      <h2>Character Bios</h2>
+      <div class="character1">
+      <img src="character1.jpg" alt="Character 1">
+      <h3>Iron Man (Tony Stark)</h3>
+      <p> Description: Genius billionaire playboy who became the armored hero. The man who kickstarted the Avengers with his quick wit and tech brilliance.
+         <b>Fact: Tony created his first suit in a cave and his final suit saved the universe.</b></p>
+      </div>
+
+     <div class="character2">
+      <h3>Captain America (Steve Rogers)</h3>
+      <p>Description: The embodiment of courage and integrity, Steve Rogers is the super-soldier with a shield that stands for hope and freedom.</p>
+      <br>
+      <b><p>Fact: Steve lifted Thor’s hammer in Endgame, proving he’s truly worthy.</b></p> 
+     </div>
+
+      <div class="character3">
+        <h3>Thor</h3>
+        <p> Description: The God of Thunder, wielding the mighty hammer and his lightning powers. From godly royalty to an Avenger with heart and humor.</p>
+        <br>
+        <p><b>Fact: Thor lost his hammer in Ragnarok but gained a new weapon, Stormbreaker.</b></p>
+      </div>
+
+      <div class="character4">
+        <h3>Black Widow (Natasha Romanoff)</h3>
+        <p>Description: A highly-skilled spy with unmatched combat abilities and a heart devoted to her Avengers family.</p>
+        <br>
+        <p><b>Fact: Natasha sacrificed herself on Vormir to obtain the Soul Stone, showing her ultimate loyalty.</b></p>
+      </div>
+
+      <div class="character5">
+        <h3>Hawkeye (Clint Barton)</h3>
+        <p>Description: The master archer with perfect aim, fighting alongside gods and monsters with just a bow and arrow.</p>
+        <br>
+        <p><b>Fact: After losing his family in the snap, Clint became a rogue vigilante known as Ronin.</b></p>
+      </div>
+
+      <div class="character6"></div>
+        <h3>Hulk (Bruce Banner)</h3>
+        <p>Description: A brilliant scientist with an uncontrollable alter-ego. In Endgame, Bruce finally balanced brains and brawn as the "Smart Hulk"</p>
+        <br>
+        <p><b>Fact: Bruce used the Infinity Gauntlet to bring back everyone snapped away by Thanos.</b></p>
+      </div>
+
+      <div class="character7"></div>
+        <h3>Thanos</h3>
+        <p>Description: The Mad Titan, obsessed with balancing the universe by wiping out half of all life. A villain driven by a twisted sense of justice.</p>
+        <br>
+        <p><b>Fact: Thanos destroyed the Infinity Stones after his snap, believing his mission was complete.</b></p>
+      </div>
+  </section>
+
+  <section id="trailers">
+    <h2>Movie Trailers</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c?si=mgrLa084ODVoIJHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <section id="quote">
+    <h2>Quote of the Day</h2>
+    <p id="quoteDisplay">Click the button to see a quote!</p>
+    <button onclick="generateQuote()">Get Quote</button>
+  </section>
+
+  <section id="quiz">
+    <h2>Trivia Quiz</h2>
+    <div id="quiz-container">
+      <p id="question">What is the name of the main character?</p>
+      <button onclick="checkAnswer('A')">Option A</button>
+      <button onclick="checkAnswer('B')">Option B</button>
+      <button onclick="checkAnswer('C')">Option C</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Movie Buff Central. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
